@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f4b">
+  <meta name="description" content="Guía informativa de los territorios de la campaña de predicación en San José de Secce, Huanta, Ayacucho.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title" content="Guía de Territorios | San José de Secce">
+  <meta property="og:description" content="Guía informativa de los territorios de la campaña de predicación en San José de Secce, Huanta, Ayacucho.">
+  <title>Guía de Territorios | San José de Secce</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#territorios">Ir a los territorios</a>
+  <main id="inicio">
+    <header class="hero">
+      <div class="mountains" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="wrap hero-content">
+        <p class="eyebrow">GUÍA DE TERRITORIOS</p>
+        <h1>San José de Secce</h1>
+        <p class="hero-location">Campaña de predicación · Huanta, Ayacucho · 2026</p>
+      </div>
+    </header>
+    <div class="wrap main-content">
+      <section id="territorios" aria-labelledby="territories-title">
+        <div class="section-heading"><h2 id="territories-title">Pueblos</h2><span class="count" id="total-count"></span></div>
+        <div class="search-box"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">Buscar pueblo</label><input id="search" type="search" placeholder="Buscar un pueblo…" autocomplete="off"></div>
+        <div class="sort-bar" role="group" aria-label="Ordenar territorios">
+          <button type="button" data-sort="todos" aria-pressed="true">Todos</button>
+          <button type="button" data-sort="cerca" aria-pressed="false">Más cercanos</button>
+          <button type="button" data-sort="lejos" aria-pressed="false">Más lejanos</button>
+          <button type="button" data-sort="alta" aria-pressed="false">Mayor altitud</button>
+          <button type="button" data-sort="baja" aria-pressed="false">Menor altitud</button>
+        </div>
+        <div class="mobile-sort">
+          <label for="sort-select">Ordenar por</label>
+          <select id="sort-select">
+            <option value="todos">Todos</option>
+            <option value="cerca">Más cercanos</option>
+            <option value="lejos">Más lejanos</option>
+            <option value="alta">Mayor altitud</option>
+            <option value="baja">Menor altitud</option>
+          </select>
+        </div>
+        <aside class="notice"><span aria-hidden="true">ⓘ</span><p>Distancias y tiempos referenciales; pueden variar por la ruta, el clima y el estado de los caminos rurales.</p></aside>
+        <p id="results-status" class="results-status" role="status" aria-live="polite"></p>
+        <div id="territory-grid" class="territory-grid"></div>
+        <div id="empty-state" class="empty-state" hidden><h3>No encontramos ese pueblo</h3><p>Prueba con parte del nombre o revisa la escritura.</p><button class="button" id="clear-search" type="button">Ver todos los pueblos</button></div>
+        <noscript><p>Activa JavaScript para consultar las fichas de los 19 pueblos.</p></noscript>
+      </section>
+      <section id="salidas" class="packing" aria-labelledby="packing-title"><div><p class="eyebrow">ANTES DE PARTIR</p><h2 id="packing-title">Para nuestras salidas</h2><p>Lo esencial, siempre contigo.</p></div><ul><li>Agua</li><li>Protección solar</li><li>Sombrero o gorra</li><li>Casaca abrigadora</li><li>Impermeable o poncho</li><li>Calzado con buen agarre</li><li>Refrigerio</li><li>Power bank</li><li>Descargar contenido necesario antes de salir</li></ul></section>
+    </div>
+  </main>
+  <footer class="wrap footer"><p>San José de Secce <span>·</span> Octubre 2026</p><p>Una guía para acompañarnos en el camino.</p><a href="#inicio">Volver arriba ↑</a></footer>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-toolbar"><span>GUÍA DE TERRITORIOS</span><button id="close-dialog" type="button" aria-label="Cerrar información">✕</button></div><div id="detail-content"></div></dialog>
+</body>
+</html>
