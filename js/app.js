@@ -85,6 +85,7 @@ function abrirDetalle(id) {
 }
 search.addEventListener('input', renderTarjetas);
 function cambiarOrden(criterio) {
+  search.value = '';
   orden = criterio;
   document.querySelector('#sort-select').value = criterio;
   document.querySelectorAll('[data-sort]').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.sort === criterio)));
